@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="loginStyle.css"> -->
+    <style>
+        body {
+background-image: url("Slide-images/14-141288_high-resolution-hd-website-background.jpg");
+}
+.login {
+    font-family: Arial, Verdana, sans-serif;
+    margin-top: 6%;
+    font-size: 16px;
+}
+table{
+    background-color: lightblue;
+    margin: auto;
+    align-content: center;
+    padding: 8px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 2%;
+    line-height: 26px;
+}
+.close {
+    position: relative;
+    float: right;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.close:hover{
+    color: crimson;
+    cursor: pointer;}
+th {
+    background-color: lightcoral;
+    color: white;
+    font-size: 22px;
+    padding: 4px 8px;}
+.one {
+background-color: rgba(240, 128, 128, 0.246);
+height: 20px;}
+.button {
+    color: white;
+    background-color: lightcoral;
+    cursor: pointer;
+    padding: 4px 8px;
+    margin: 2px 0;
+    width: 100%;}
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="index.html">Back</a>
+    </div>
+    <div id="cross" class="login"></div>
+    <form action="home.html" onsubmit="return formValidate()" onclick="return event()" name="myForm" method="POST">
+        <table>
+           
+            <tr>
+                <th colspan="3">Log In to your Account</th>
+            </tr>    
+            <tr>
+                <td><label for="username">User Name</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="username" placeholder ="Enter your name" required="required" size="30" class="one"/></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address</label></td>
+            </tr>
+            <tr>
+                <td><input type="email" id="email" name="email" value="" placeholder="Please enter your email" size="30" class="one"/>
+                    <span id="message" style="color: red;"></span></td>
+            </tr>
+            <tr>       
+                <td><label for="password">Password</label></td>
+            </tr>
+            <tr>
+                <td><input type="password" id="pswd" name="password" value="" placeholder="Please enter minimum 6 characters" required="required" size="30" class="one"/>
+                <span id="Message" style="color: red;"></span></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td><label><button type="submit" class="button">Login</button></label></td>
+            </tr>
+        </table>
+    </form>
+    </div> 
+    <script>
+        var login = document.getElementById('cross');
+        window.onclick = function(event) {
+  if (event.target === login) {
+ login.style.display = "none";
+  }
+}
+function formValidate() {
+    var e = document.myForm.email.value;
+    var p = document.getElementById("pswd").value;
+    if(e.charAt(e.length-4)!==".") {
+    document.getElementById('message').innerHTML="**Invalid . position";
+    return false;
+}
+    if(p.length < 6 ) {
+        document.getElementById("Message").innerHTML="**Please fill atleast 6 characters";
+        return false;
+    }
+    if(p.length > 15 ) {
+        document.getElementById("Message").innerHTML="**Please fill less than 15 characters";
+        return false;
+}
+} 
+</script>     
+</body>
+</html>

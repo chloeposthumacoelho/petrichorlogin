@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="product">
+        <div class="prd-11-img">
+            <img src="pages-images/sam2-1.webp" alt="" id="prdImage11">
+        </div>
+    
+<div class="prd-page-11">
+    <h1 class="page-3-name">Samsung A30S - 4GB RAM + 128GB ROM - 6.4 Infinity Display Super Amoled Screen</h1>
+        <span class="prd-1-price">Rs. 38,999</span> 
+   <br><br>
+   <hr>
+   <div class="page-11-des">
+   <label>Warranty: </label>
+        <span>1 Year Official</span><br>
+    <label>Brand: </label>
+        <span>Samsung</span> <br>                                                                      
+    <label>Description: </label>
+        <div><p>
+            <span style="font-size: medium;"><strong>• Dispaly:</strong>6.4</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Ram:</strong>4 GB</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Rom:</strong>128 GB</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Camera:</strong>25MP + 5MP + 8MP</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Front Camera:</strong>16 MP</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Battery:</strong>4000 mAh Battery</span></p>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    var images =['pages-images/sam2-1.webp','pages-images/sam2-2.jpg','pages-images/sam2-3.webp','pages-images/sam2-4.webp']
+var i = 0;
+function productImg() {
+document.getElementById("prdImage11").src = images[i];
+if(i<(images.length-1))
+i++;
+else
+i=0;
+}
+setInterval(productImg, 2000)  //Change image every 2 seconds
+</script>
+</body>
+</html>

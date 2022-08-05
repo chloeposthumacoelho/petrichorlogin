@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="product">
+        <div class="prd-8-img">
+            <img src="pages-images/lap6-1.webp" alt="website-image" id="prdImage8">
+        </div>
+    
+<div class="prd-page-8">
+    <h1 class="page-1-name">HP 15 BS166nia - 8th Gen Ci7 QuadCore 04GB 1TB 15.6 HD LED 720p</h1>
+        <span class="prd-1-price">Rs. 99,000</span> 
+   <br><br>
+   <hr>
+   <div class="page-8-des">
+   <label>Warranty: </label>
+        <span>1 Year Official</span><br>
+    <label>Brand: </label>
+        <span>HP</span> <br>                                                                      
+    <label>Description: </label>
+        <div><p>
+            <span style="font-size: medium;"><strong>• Processor:</strong>Intel Core i7</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Ram:</strong>&nbsp;4GB DDR4</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Hard Drive:</strong> 1 TB</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Display:</strong> 15.6 FHD</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Operating System:</strong> DOS</span></p>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    var images = ['pages-images/lap6-1.webp','pages-images/lap6-2.jpg','pages-images/lap6-3.jpg']
+var i = 0;
+function productImg() {
+document.getElementById("prdImage8").src = images[i];
+if(i<(images.length-1))
+i++;
+else
+i=0;
+}
+setInterval(productImg, 2000)  //Change image every 2 seconds
+</script>
+</body>
+</html>

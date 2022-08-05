@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="product">
+        <div class="prd-12-img">
+            <img src="pages-images/sam3-1.webp" alt="" id="prdImage12">
+        </div>
+    
+<div class="prd-page-12">
+    <h1 class="page-3-name">Samsung Galaxy J6+ Mobile Phone - 6.0 HD Display - 3GB RAM - 32GB ROM - Fingerprint Sensor"</h1>
+        <span class="prd-1-price">Rs. 30,999</span> 
+   <br><br>
+   <hr>
+   <div class="page-12-des">
+   <label>Warranty: </label>
+        <span>1 Year Official</span><br>
+    <label>Brand: </label>
+        <span>Samsung</span> <br>                                                                      
+    <label>Description: </label>
+        <div><p>
+            <span style="font-size: medium;"><strong>• Dispaly:</strong>5.1 - 5.5 InchPPI200</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Ram:</strong>3 GB</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Rom:</strong> 32 GB</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Battery:</strong>Non-removable Li-Ion 3300 mAh</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Front Camera:</strong>5 mp</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Samsung Colors:</strong>Red, Black, Grey</span></p>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    var images =['pages-images/sam3-1.webp','pages-images/sam3-2.jpg','pages-images/sam3-3.jpg','pages-images/sam3-4.webp','pages-images/sam3-5.webp']
+var i = 0;
+function productImg() {
+document.getElementById("prdImage12").src = images[i];
+if(i<(images.length-1))
+i++;
+else
+i=0;
+}
+setInterval(productImg, 2000)  //Change image every 2 seconds
+</script>
+</body>
+</html>

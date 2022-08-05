@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="product">
+        <div class="prd-10-img">
+            <img src="pages-images/moto3-1.webp" alt="" id="prdImage10">
+        </div>
+    
+<div class="prd-page-10">
+    <h1 class="page-3-name">Moto E6 Plus - 6.1 - 4GB RAM - 64GB ROM - Fingerprint Sensor - 3000mAh Battery</h1>
+        <span class="prd-1-price">Rs. 19,499</span> 
+   <br><br>
+   <hr>
+   <div class="page-10-des">
+   <label>Warranty: </label>
+        <span>1 Year Official</span><br>
+    <label>Brand: </label>
+        <span>Motorola</span> <br>                                                                      
+    <label>Description: </label>
+        <div><p>
+            <span style="font-size: medium;"><strong>•&nbsp;Ram:</strong>4 GB</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Rom:</strong> 64 GB</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Camera:</strong>13 MP, f/2.0, 1/3.1", 1.12µm, PDAF,2 MP, depth sensor</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Front Camera:</strong>8 MP, f/2.0, 1/4", 1.12µm</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Battery:</strong>Removable Li-Po 3000 mAh battery</span></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var images = ['pages-images/moto3-1.webp','pages-images/moto3-2.jpg','pages-images/moto3-4.jfif','pages-images/moto3-5.jpg']
+var i = 0;
+function productImg() {
+document.getElementById("prdImage10").src = images[i];
+if(i<(images.length-1))
+i++;
+else
+i=0;
+}
+setInterval(productImg, 2000)  //Change image every 2 seconds
+</script>
+</body>
+</html>

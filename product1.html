@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+    
+</head>
+<body>
+    <div class="product">
+            <div class="prd-1-img">
+                <img src="pages-images/lap1-1.jpg" alt="website-image" id="prdImage">
+            </div>
+        
+    <div class="prd-page-1">
+        <h1 class="page-1-name">HP ProBook 450 G5 15.6" Core i3 8th Gen 4GB 1TB Notebook - Official Warranty</h1>
+            <span class="prd-1-price">PKR 68,077</span> 
+       <br><br>
+       <hr>
+       <div class="page-1-des">
+       <label>Warranty: </label>
+            <span>1 Year Official</span><br>
+        <label>Brand: </label>
+            <span>HP</span> <br>                                                                      
+        <label>Description: </label>
+            <div><p>
+                <span style="font-size: medium;"><strong>• Processor:</strong>Intel Core i3-8130U 8th Gen 2.2GHz</span><br>
+                <span style="font-size: medium;"><strong>•&nbsp;Ram:</strong>&nbsp;4GB DDR4</span><br>
+                <span style="font-size: medium;"><strong>•&nbsp;Hard Drive:</strong> 1TB</span><br>
+                <span style="font-size: medium;"><strong>•&nbsp;Display:</strong> 15.6"&nbsp;</span><br>
+                <span style="font-size: medium;"><strong>•&nbsp;Graphics:</strong>&nbsp;Intel HD Graphics 620</span><br>
+                <span style="font-size: medium;"><strong>•&nbsp;Operating System:</strong> DOS</span></p>
+            </div>
+        </div>
+    </div>
+ </div>   
+    <script>
+        var images = ['pages-images/lap1-1.jpg','pages-images/lap1-2.png','pages-images/lap1-3.png', 'pages-images/lap1-4.png']
+var i = 0;
+function productImg() {
+  document.getElementById("prdImage").src = images[i];
+ if(i<(images.length-1))
+ i++;
+ else
+ i=0;
+}
+  setInterval(productImg, 2000)  //Change image every 2 seconds
+    </script>
+   </body>
+</html>

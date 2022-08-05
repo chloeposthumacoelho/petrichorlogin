@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="product">
+        <div class="prd-5-img">
+            <img src="pages-images/lap3-1.jpg" alt="website-image" id="prdImage5">
+        </div>
+    
+<div class="prd-page-5">
+    <h1 class="page-1-name">HP Probook 450 G6 Laptop 8th Gen Core i7, 8GB DDR4, 1TB HDD, 2GB NVIDIA MX130, 15.6 FHD</h1>
+        <span class="prd-1-price">Rs. 115,000</span> 
+   <br><br>
+   <hr>
+   <div class="page-6-des">
+   <label>Warranty: </label>
+        <span>1 Year Official</span><br>
+    <label>Brand: </label>
+        <span>HP</span> <br>                                                                      
+    <label>Description: </label>
+        <div><p>
+            <span style="font-size: medium;"><strong>• Processor:</strong>Intel Core i7</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Ram:</strong>&nbsp;8GB DDR4</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Hard Drive:</strong> 1TB</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Display:</strong> 15.6 FHD</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Operating System:</strong> DOS</span></p>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    var images = ['pages-images/lap3-1.jpg','pages-images/lap3-2.png','pages-images/lap3-3.jpg']
+var i = 0;
+function productImg() {
+document.getElementById("prdImage5").src = images[i];
+if(i<(images.length-1))
+i++;
+else
+i=0;
+}
+setInterval(productImg, 2000)  //Change image every 2 seconds
+</script>
+</body>
+</html>

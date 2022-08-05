@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="product">
+        <div class="prd-2-img">
+            <img src="pages-images/lap2-1.webp" alt="hp probook g5 pic" id="prdImage2">
+        </div>
+    <div class="prd-page-2">
+        <h1 class="page-2-name">Hp 14 Laptop- DQ1039WM 14 Inch Core i5 10th Gen 8Gb Ram Ddr4 256Gb SSD 16Gb Optane Win 10 License</h1>
+            <span class="prd-2-price">PKR 76,499</span> 
+       <br><br>
+       <hr>
+       <div class="page-2-des">
+       <label>Warranty: </label>
+            <span>1 Year Official</span><br>
+        <label>Brand: </label>
+            <span>HP</span><br>                                                                       
+        <label>Description: </label>
+            <div ><p>
+                <span style="font-size: medium;"><strong>• Processor:</strong> i5 10th Gen</span><br>
+                <span style="font-size: medium;"><strong>•&nbsp;Ram:</strong>&nbsp;8GB DDR4</span><br>
+                <span style="font-size: medium;"><strong>•&nbsp;Hard Drive:</strong> 256GB SSD</span><br>
+                <span style="font-size: medium;"><strong>•&nbsp;Display:</strong> 14"&nbsp;</span><br>
+                <span style="font-size: medium;"><strong>•&nbsp;Graphics:</strong>&nbsp;Intel UHD Graphics</span><br>
+                <span style="font-size: medium;"><strong>•&nbsp;Model Name:</strong> HP 14 DQ-1039WM</span></p>
+    </div>
+    </div>
+</div>        
+<script>
+var images = ['pages-images/lap2-1.webp','pages-images/lap1-2.png','pages-images/lap1-3.png']
+var i = 0;
+function productImg() {
+  document.getElementById("prdImage2").src = images[i];
+ if(i<(images.length-1))
+ i++;
+ else
+ i=0;
+}
+  setInterval(productImg, 2000)  //Change image every 2 seconds
+
+
+</script>
+
+</body>
+</html>

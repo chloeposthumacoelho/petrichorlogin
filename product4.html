@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="product">
+        <div class="prd-4-img">
+            <img src="pages-images/sam1-1.webp" alt="" id="prdImage4">
+        </div>
+    
+<div class="prd-page-4">
+    <h1 class="page-3-name">Samsung Galaxy A10S - 6.2 Display - Main Camera 13 + 2 MP - Front Camera 8 MP  </h1>
+        <span class="prd-1-price">PKR 20,999</span> 
+   <br><br>
+   <hr>
+   <div class="page-4-des">
+   <label>Warranty: </label>
+        <span>1 Year Official</span><br>
+    <label>Brand: </label>
+        <span>Samsung</span> <br>                                                                      
+    <label>Description: </label>
+        <div><p>
+            <span style="font-size: medium;"><strong>• Dispaly:</strong>6.2</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Ram:</strong>2gb</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Rom:</strong> 32gb</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Camera:</strong>13 + 2 mp</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Front Camera:</strong>8 mp</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Samsung Colors:</strong>Red, Black, Blue, Green</span></p>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    var images =['pages-images/sam1-1.webp','pages-images/sam1-2.png','pages-images/sam1-3.webp']
+var i = 0;
+function productImg() {
+document.getElementById("prdImage4").src = images[i];
+if(i<(images.length-1))
+i++;
+else
+i=0;
+}
+setInterval(productImg, 2000)  //Change image every 2 seconds
+</script>
+</body>
+</html>

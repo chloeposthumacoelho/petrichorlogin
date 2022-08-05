@@ -1,0 +1,65 @@
+.links {
+    text-align: end;
+    padding: 10px;
+}
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    justify-content: space-around;
+    margin-top: 0 auto;
+}
+.prod-header {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    max-width: 1200px;
+    border-bottom: 4px solid lightgray;
+    margin: 10px;
+}
+.remove-btn {
+    margin-left: 2%
+}
+.prod-title {
+    margin-left: 10%;
+}
+.price {
+    text-align: center;
+    width: 22%;
+    margin-bottom: -50px;
+}
+.quantity {
+    width: 28%;
+    text-align: center;
+    margin-bottom: -50px;
+}
+.total {
+    width: -5%;
+    margin-bottom: -50px;
+}
+.quantity ion-icon,
+.product ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.products {
+    line-height: 50px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 0;
+}
+.basketTotalTitle {
+    margin-left: 350px;
+}

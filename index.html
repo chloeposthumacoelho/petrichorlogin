@@ -1,123 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOID 3D</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/19ab91f7bd.js" crossorigin="anonymous"></script>
-    <!--     <script data-main="scripts/main" src="./scripts/require.js"></script>
- -->
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- navbar -->
-    <nav class="navbar">
-        <div class="navbar-center">
+  <div class="header">
+   
+   
+   <ul style="list-style-type: none;"  class="links">
+    <li><a href="#" class="hdr-link1">Home</a></li>
+     <li><a href="contactUs.html"  class="hdr-link4">ContactUs</a></li>
+     <li><a href="login.html" class="hdr-link2">Login</a></li>
+     <li><a href="signUp.html" class="hdr-link5">SignUp</a></li>
+     <li><a href="shoppingCart/cart.html"  class="hdr-link3"><ion-icon name="basket"></ion-icon>Cart<span class="cart-span">0</span></a></li>
+   </ul>
 
-            <div class="menu-btn" >
-                <i class="fas fa-bars"></i>
-            </div>
+   <img src="Slide-images/logo - Copy 3.png" alt="" class="logoImg"><h1 class="cartname"><span class="c-name1">D</span>igital<span class="c-name2"><br />A</span>ccess</h1>
+</div>
 
-            <div class="logo-div">
-                <a href="./index.html">
-                    <img src="./images/logo.svg" alt="logo" class="logo">
-                </a>
-            </div>
-
-            <div class="main-menu-div">
-                <ul class="main-menu">
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./about.html">Quiénes somos</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./contact.html">Contacto</a></li>
-                </ul>
-            </div>
-
-            <div class="right-icons">
-                <div class="search-btn">
-                    <span class="nav-icon">
-                        <i class="fas fa-search"></i>
-                    </span>
-                </div>
-                <div class="cart-btn">
-                    <span class="nav-icon">
-                        <i class="fas fa-cart-plus"></i>
-                    </span>
-                    <div class="cart-items">0</div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- navbar end -->
-
-    <!-- top section -->
-    <header class="header">
-        <div class="banner">
-            <h1 class="banner-title">Slider</h1>
-            <a href="./productos.html"><button class="banner-btn">Compra</button></a>
-        </div>
-    </header>
-    <!-- top section end -->
-
-    <!-- products -->
-    <section class="products">
-        <div class="section-title">
-            <h2>Nuestros productos</h2>
-        </div>
-        <div class="products-center">
-        </div>
-    </section>
-    <!-- products end -->
-
-    <!-- fold menu -->
-    <div class="menu-overlay">
-        <div class="fold-menu">
-            <span class="close-menu">
-                <i class="fas fa-window-close"></i>
-            </span>
-            <div class="fold-menu-content">
-                <ul class="fold-main-menu">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./about.html">Quiénes somos</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./contact.html">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
+<div class="slideShow-container">
+  <div style="display: block;" class="slides">
+    <div class="slide1Text"><h4> Welcome EveryOne</h4></div>
+    <div><img src="Slide-images/sl1.jpg" alt="" id="slideImage"></div>
+  </div>
+  <div class="slides">
+    <div class="slide2Text"><p><span class="slide2Text1">Don't</span> wait <br /><span class="slide2Text2">The time will</span><br /> <span class="slide2Text3">NEVER</span> <br /><span class="slide2Text4">be just</span> <span class="slide2Text5">right</span></p></div>
+    <div><img src="Slide-images/sl2.jpg" alt="" id="slideImage"></div>
+  </div>
+  <div class="slides">
+    <div class="slide3Text"><h1>We Are Creative</h1></div>
+    <div><img src="Slide-images/sl3.jpg" alt="" id="slideImage"></div>
+  </div>
+  <div class="slides">
+    <div  class="slide4Text"><h1>Modern Design</h1></div>
+    <div><p class="slide4para1">Imagination is more important than knowledge.</p>
+    <p class="slide4para2">Knowledge is limited. Imagination encircles the world.</p></div>
+    <div class="slide4Btn">
+      <a href="#" class="slide4link">Know More</a>
     </div>
-    <!-- fold menu end -->
+    <div><img src="Slide-images/sl4.jpg" alt="" id="slideImage"></div>
+  </div>
 
-    <!-- cart -->
-    <div class="cart-overlay">
-        <div class="cart">
-            <span class="close-cart">
-                <i class="fas fa-window-close"></i>
-            </span>
-            <h2>tu pedido</h2>
-            <div class="cart-content">
-                <!-- cart item -->
-                <!-- <div class="cart-item">
-                </div> -->
-                <!-- cart item end -->
-            </div>
-            <div class="cart-footer">
-                <h3>total : $ <span class="cart-total">0</span></h3>
-                <button class="continue-buying">seguir comprando</button>
-                <br>
-                <span class="clear-cart">limpiar carrito</span>
-            
-            </div>
-        </div>
-    </div>
-    <!-- cart end -->
+  <!-- Next and previous buttons -->
+  <a class="previous" onclick="plusIndex(-1)">&#10094;</a>
+  <a class="next" onclick="plusIndex(+1)">&#10095;</a>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 
-    <script src="./scripts/app.js"></script>
+<div  class="lpt-container1">
+  <div class="lpt-1">
+      <a href="pages/product1.html"><img src="pages/pages-images/lap1-1.jpg" alt="" class="lpt-image1"></a>
+      <a href="pages/product1.html"><h3>HP ProBook 450 G5 15.6 Corei3 8thGen </h3></a>
+      <h3>PKR 68,077</h3>
+      <a class="add-cart cart1" href="#">Add to cart</a>
+  </div>
+  <div class="lpt-2">
+      <a href="pages/product2.html"><img src="pages/pages-images/lap2-1.webp" alt="" class="lpt-image2"></a>
+      <a href="pages/product2.html"><h3>Hp 14 Laptop- 14 Inch Core i5 10th Gen </h3></a>
+      <h3>PKR 76,499</h3>
+      <a class="add-cart cart2" href="#">Add to cart</a>
+  </div>
+  <div class="lpt-3">
+    <a href="pages/product5.html"><img src="pages/pages-images/lap3-1.jpg" alt="" class="lpt-image3"></a>
+      <a href="pages/product5.html"><h3>HP Probook 450 G6 Laptop 8th Gen Core i7 </h3></a>
+      <h3>Rs. 115,000</h3>
+      <a class="add-cart cart3" href="#">Add to cart</a>
+  </div>
+</div>
+
+<div  class="lpt-container2">
+  <div class="lpt-4">
+      <a href="pages/product6.html"><img src="pages/pages-images/lap4-1.webp" alt="" class="lpt-image4"></a>
+      <a href="pages/product6.html"><h3>HP PROBOOK 440 G5 - 14 FHD Display - 8th Gen. Intel®Core™ i7</h3></a>
+      <h3>Rs. 125,999</h3>
+      <a class="add-cart cart4" href="#">Add to cart</a>
+  </div>
+  <div class="lpt-5">
+    <a href="pages/product7.html"><img src="pages/pages-images/lap5-1.webp" alt="" class="lpt-image5"></a>
+    <a href="pages/product7.html"><h3>HP Elitebook 850 G5 - Intel Core i7</h3></a>
+    <h3>Rs. 113,700</h3>
+    <a class="add-cart cart5" href="#">Add to cart</a>
+  </div>
+  <div class="lpt-6">
+    <a href="pages/product8.html"><img src="pages/pages-images/lap6-1.webp" alt="" class="lpt-image6"></a>
+    <a href="pages/product8.html"><h3>Hp 15 - 8th Gen Ci7</h3></a>
+    <h3>Rs. 99,000</h3>
+    <a class="add-cart cart6" href="#">Add to cart</a>
+  </div>
+</div>
+
+
+<div  class="mob-container1">
+  <div class=mob-1>
+      <a href="pages/product3.html"><img src="pages/pages-images/moto1-1.jpg" alt="" class="mob-image1"></a>
+      <a href="pages/product3.html"><h3>Motorola Droid Turbo </h3></a>
+      <h3>Rs. 14,900</h3>
+      <a class="add-cart cart7" href="#">Add to cart</a>
+  </div>
+  <div class="mob-2">
+      <a href="pages/product9.html"><img src="pages/pages-images/moto2-1.webp" alt="" class="mob-image2"></a>
+      <a href="pages/product9.html"><h3>Motorola One Macro - 6.2 inchs</h3></a>
+      <h3>Rs. 30,999</h3>
+      <a class="add-cart cart8" href="#">Add to cart</a>
+  </div>
+  <div class="mob-3">
+      <a href="pages/product10.html"><img src="pages/pages-images/moto3-1.webp" alt="" class="mob-image3"></a>
+      <a href="pages/product10.html"><h3>Motorola E6 Plus 6.1 inchs</h3></a>
+      <h3>Rs. 19,499</h3>
+      <a  class="add-cart cart9" href="">Add to Cart</a>
+  </div>
+</div>
+
+<div  class="mob-container2">
+  <div class="mob-4">
+      <a href="pages/product4.html"><img src="pages/pages-images/sam1-1.webp" alt="" class="mob-image4"></a>
+      <a href="pages/product4.html"><h3>Samsung Galaxy A10S </h3></a>
+      <h3>Rs. 20,999</h3>
+      <a class="add-cart cart10" href="#">Add to cart</a>
+  </div>
+  <div class="mob-5">
+      <a href="pages/product11.html"><img src="pages/pages-images/sam2-1.webp" alt="" class="mob-image5"></a>
+      <a href="pages/product11.html"><h3>Samsung A30S - 6.4 inchs </h3></a>
+      <h3>Rs. 38,999</h3>
+      <a class="add-cart cart11" href="#">Add to cart</a>
+  </div>
+  <div class="mob-6">
+    <a href="pages/product12.html"><img src="pages/pages-images/sam3-1.webp" alt="" class="mob-image6"></a>
+    <a href="pages/product12.html"><h3>Samsung Galaxy J6+ - 6.0 inchs </h3></a>
+    <h3>Rs. 30,999</h3>
+    <a class="add-cart cart12" href="#">Add to cart</a>
+  </div>
+</div>
+
+  <div class="footer1">
+    <p class="ftr-para">The company access.</p>
+     <ul style="list-style-type:none;">
+       <li><a href="#" class="ftr1">Home</a></li>
+       <li><a href="#" class="ftr2">Blog</a></li>
+       <li><a href="#" class="ftr3">About</a></li>
+       <li><a href="contactUs.html" class="ftr4">Contact</a></li>
+     </ul> 
+
+     <h4 class="ftr-hdg2">Follow us on</h4>
+     <ion-icon class="ftr-link1" name="logo-facebook"></ion-icon>
+     <ion-icon class="ftr-link2" name="logo-twitter"></ion-icon>
+     <ion-icon class="ftr-link3" name="logo-snapchat"></ion-icon>
+
+     <h4 class="ftr6" >&copy;2020 <span class="ftr5">digital Access.</span>All rights reserved.</h4>
+  </div>
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="shoppingCart/main.js"></script>
+
+<script>
+  var slideIndex =1 ;
+showImages(slideIndex);
+
+function plusIndex(n) {
+  showImages(slideIndex += n);
+}
+
+function showImages(n) {
+  var slide = document.getElementsByClassName("slides");
+
+ if(n > slide.length) {
+   slideIndex = 1
+ };
+ if (n< 1) {
+   slideIndex = slide.length;
+ }
+ for(var i=0; i< slide.length; i++) {
+   slide[i].style.display = "none";
+};
+slide[slideIndex-1].style.display = "block";
+}
+</script>
 </body>
-
 </html>

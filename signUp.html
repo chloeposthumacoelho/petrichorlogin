@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       body {
+    background-image: url("Slide-images/92345077-geometric-grey-background-molecule-and-communication-connected-lines-with-dots.jpg");       
+}
+table{
+       background-color: rosybrown;
+       margin:auto;
+       align-content: center;
+       padding: 6px;
+       box-shadow: 0px 0px 10px;
+       border-radius: 2%;
+       line-height: 20px;
+    }
+th {
+        background-color: slategrey;
+        color: snow;
+        font-size: 20px;
+    }
+.button {
+        background-color: slategrey;
+        cursor: pointer;
+        padding: 4px 8px;
+        margin: 2px 0;
+        width: 100%;
+    }
+    .button a {
+        color:black;
+    }
+   </style>
+</head>
+<body>
+
+    <div class="signUp"></div>
+    <form action="home.html" onsubmit=" return signUpValidate()" name="mySignUp" method="POST">
+        <table>
+            <tr>
+                <th colspan="3">Create Your Account</th>
+            </tr>    
+            <tr>
+                <td><label for="username">User Name</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="username" placeholder ="Enter your name" required="required" size="30" class="two"/></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address</label></td>
+            </tr>
+            <tr>
+                <td><input type="email" id="Email" name="email" value="" placeholder="Enter your email address" required="required" size="30" class="two"/>
+                    <span id="msg" style="color: white;"></span></td>
+            </tr>
+            <tr>       
+                <td><label for="password">Password</label></td>
+            </tr>
+            <tr>
+                <td><input type="password" id="passwordd" name="password" value="" placeholder="Enter minimum 6 characters" required="required" size="30" class="two"/>
+                    <span id="Msg" style="color: white;"></span></td>
+            </tr>
+            <tr>
+                <td><label for="confirmpsd">Confirm Password</label></td>
+            </tr>
+            <tr>
+                <td><input type="password" id="passwordss" name="confirm password" value="" placeholder="Confirm your Password" required="required" size="30" class="two">
+                    <span id="Msgg" style="color: white;"></span></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td><label><button type="submit" class="button">SignUp</button></label></td>
+            </tr>
+            <tr>    
+                <td><label><button type="cancel" class="button"><a href="index.html"  style="text-decoration: none;">Cancel</a></button></label></td>
+            </tr>
+        </table>
+    </form>
+    </div> 
+    <script>
+      function signUpValidate() {
+    var e = document.mySignUp.email.value;
+    var p = document.getElementById("passwordd").value;
+    var c = document.getElementById("passwordss").value;
+    if(e.charAt(e.length-4)!==".") {
+    document.getElementById('msg').innerHTML="**Invalid . position";
+    return false;
+    }
+    if(p.length < 6 ) {
+        document.getElementById("Msg").innerHTML="**Please fill atleast 6 characters";
+        return false;
+    }
+    if(p.length > 15 ) {
+        document.getElementById("Msg").innerHTML="**Please fill less than 15 characters";
+        return false;
+    }
+    if(p!=c){
+        document.getElementById('Msgg').innerHTML="**Password are not same";
+        return false;
+    }
+}  
+    </script>       
+</body>
+</html>

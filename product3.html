@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="product">
+        <div class="prd-3-img">
+            <img src="pages-images/moto1-1.jpg" alt="" id="prdImage3">
+        </div>
+    
+<div class="prd-page-3">
+    <h1 class="page-3-name">Motorola Droid Turbo Nylon 3gb / 32gb - PTA Approved</h1>
+        <span class="prd-1-price">PKR 14,900</span> 
+   <br><br>
+   <hr>
+   <div class="page-3-des">
+   <label>Warranty: </label>
+        <span>1 Year Official</span><br>
+    <label>Brand: </label>
+        <span>Motorola</span> <br>                                                                      
+    <label>Description: </label>
+        <div><p>
+            <span style="font-size: medium;"><strong>•&nbsp;Ram:</strong>3gb</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Rom:</strong> 32gb</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Camera:</strong>21mp Hd Camera with dual led flash</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Front Camera:</strong>2.1 mp</span><br>
+            <span style="font-size: medium;"><strong>•&nbsp;Battery:</strong>3500 mah Powerfull Battery</span></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var images =['pages-images/moto1-1.jpg','pages-images/moto1-2.jpg']
+var i = 0;
+function productImg() {
+document.getElementById("prdImage3").src = images[i];
+if(i<(images.length-1))
+i++;
+else
+i=0;
+}
+setInterval(productImg, 2000)  //Change image every 2 seconds
+</script>
+</body>
+</html>
